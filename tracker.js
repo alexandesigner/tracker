@@ -428,7 +428,6 @@ Tracker.Computation = class Computation {
   }
 };
 
-//
 // http://docs.meteor.com/#tracker_dependency
 
 /**
@@ -446,7 +445,7 @@ Tracker.Dependency = class Dependency {
   }
 
   // http://docs.meteor.com/#dependency_depend
-  //
+
   // Adds `computation` to this set if it is not already
   // present.  Returns true if `computation` is a new member of the set.
   // If no argument, defaults to currentComputation, or does nothing
@@ -527,7 +526,7 @@ Tracker.inFlush = function () {
 }
 
 // http://docs.meteor.com/#tracker_autorun
-//
+
 // Run f(). Record its dependencies. Rerun it whenever the
 // dependencies change.
 //
@@ -570,7 +569,7 @@ Tracker.autorun = function (f, options) {
 };
 
 // http://docs.meteor.com/#tracker_nonreactive
-//
+
 // Run `f` with no current computation, returning the return value
 // of `f`.  Used to turn off reactivity for the duration of `f`,
 // so that reactive data sources accessed by `f` will not result in any
