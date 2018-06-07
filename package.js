@@ -8,7 +8,6 @@ Package.onUse(function (api) {
   api.export('Tracker');
   api.export('Deps');
   api.addFiles('tracker.js');
-  api.addFiles('deprecated.js');
 });
 
 Package.onTest(function (api) {
